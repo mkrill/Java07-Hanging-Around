@@ -17,7 +17,9 @@ public abstract class Vehicle {
 //	12. Compile and test Hangar: once everything is working, create a git repository and add it all to GitHub
 //	13. Submit a link to your GitHub repository as the solution
 	
-	String brand;
+	private String brand;
+	private int kilometers;
+	
 	public String getBrand() {
 		return brand;
 	}
@@ -34,8 +36,6 @@ public abstract class Vehicle {
 		this.kilometers = kilometers;
 	}
 
-	int kilometers;
-	
 	public Vehicle(String brand, int kilometers) {
 		this.brand = new String (brand);
 		this.kilometers = kilometers;
